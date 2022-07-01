@@ -1,21 +1,21 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "JSTN",
+  "url": "https://iamjustin.dev/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Passionate about tech and developer experience. I'll frequently share new stuff here, dev.to and twitter.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Passionate about tech and developer experience. I'll frequently share new stuff here, dev.to and twitter.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://iamjustin.dev/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://iamjustin.dev/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Justin Visserman",
+    "email": "noemail@iamjustin.dev",
+    "url": "https://iamjustin.dev/about-me/"
   }
 }
