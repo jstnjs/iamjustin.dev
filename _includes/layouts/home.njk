@@ -3,4 +3,25 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-{{ content | safe }}
+{# <section>
+    <header class="relative mt-10 flex items-center">
+        <h2 class="pr-3 text-2xl font-medium text-gray-900 whitespace-nowrap">About me</h2>
+        <hr class="w-full bg-gray-300">
+    </header>
+
+    {% include "postslist.njk" %}
+</section> #}
+
+<section class="mt-10 max-w-lg mx-auto">
+    {# <header class="relative mt-10 flex items-center">
+        <h2 class="pr-3 text-2xl font-medium text-gray-900">Posts</h2>
+        <hr class="w-full bg-gray-300">
+    </header> #}
+
+    {% include "postslist.njk" %}
+</section>
+
+
+
+
+{# {{ content | safe }} #}
