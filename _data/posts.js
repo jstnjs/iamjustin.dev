@@ -25,23 +25,27 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 module.exports = function() {
 	return [
 		{
-			title: "A blog to test",
+			title: "A blog to test 123",
 			description: 'Pretty short descriptiion',
+			published_at: '2021-10-16T23:32:59Z',
 			slug: "post-1"
 		},
 		{
 			title: "A blog to test",
 			description: 'Pretty short descriptiion. This is a longer description that eventually need to be a excerpt. For now Ill use it like this..',
+			published_at: '',
 			slug: "post-2"
 		},
 		{
 			title: "A blog to test",
 			description: 'Pretty short descriptiion',
+			published_at: '2020-07-04T22:51:43Z',
 			slug: "post-3"
 		},
 		{
 			title: "A blog to test",
 			description: 'Pretty short descriptiion',
+			published_at: '2020-07-04T22:51:43Z',
 			slug: "post-4"
 		}
 	]

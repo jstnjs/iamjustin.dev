@@ -1,8 +1,8 @@
-<div class="mt-6">
+<div class="mt-3">
   {% for post in posts | reverse %}
-    <article class="mt-6 pt-6 border-t border-gray-300 first:border-none">
+    <article class="first:mt-0 first:pt-0 mt-6 pt-6 border-t border-gray-300 first:border-none">
       <header class="text-sm text-gray-500">
-        <time datetime="2020-07-04T22:51:43Z">2020-07-04T22:51:43Z</time>
+        <time datetime="{{ post.published_at }}">{{ post.published_at | readableDate }}</time>
       </header>
 
       <a href="/posts/{{post.slug}}/" class="mt-2 block">
@@ -11,7 +11,7 @@
       </a>
 
       <footer class="mt-3">
-        <a href="/posts/{{post.slug}}/" class="text-base font-semibold text-indigo-600 hover:text-indigo-500">Read full story</a>
+        <a href="/posts/{{post.slug}}/" class="block text-base font-semibold text-indigo-600 hover:text-indigo-500">Read full story</a>
       </footer>
     </article>
   
