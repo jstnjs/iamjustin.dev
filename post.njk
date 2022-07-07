@@ -1,0 +1,23 @@
+---
+pagination:
+  data: posts
+  size: 1
+  alias: post
+permalink: posts/{{ post.slug }}/
+type: article
+eleventyComputed:
+  title: "{{ post.title }}"
+  description: "{{ post.description }}"
+  image: "{{ post.image }}"
+  published_time: "{{ post.published_at }}"
+  modified_time: "{{ post.edited_at}}"
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+<article class="prose prose-slate max-w-none">
+  <time datetime="{{ post.published_at }}" class="text-sm text-gray-500">{{ post.published_at | readableDate }}</time>
+
+  <h1>{{ post.title }}</h1>
+  {{ post.body_markdown | markdown | safe }}
+</article>

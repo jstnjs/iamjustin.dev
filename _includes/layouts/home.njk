@@ -3,26 +3,19 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-<section class="max-w-lg mx-auto">
-    <header class="relative mb-6 flex items-center">
-        <h2 class="pr-3 text-2xl font-medium text-gray-900">About</h2>
-        {# <hr class="w-full bg-gray-300"> #}
+<section>
+    <header class="flex items-center">
+        <h2 class="font-bold text-2xl my-4">About</h2>
     </header>
 
-    <p>Hi there, I'm Justin Visserman. Passionate about tech and developer experience. I'll frequently share new stuff here, <a href="https://dev.to/jstnjs" target="_blank" class="text-indigo-600 font-bold">dev.to</a> and <a href="https://twitter.com/j1sc2s" target="_blank" class="text-indigo-600 font-bold">twitter</a>.
+    <p class="text-slate-700">Hi there, I'm Justin Visserman. Passionate about tech and developer experience. I'll frequently share new stuff here, <a href="https://dev.to/jstnjs" target="_blank" class="text-indigo-600 hover:text-indigo-500 font-bold">dev.to</a> and <a href="https://twitter.com/j1sc2s" target="_blank" class="text-indigo-600 hover:text-indigo-500 font-bold">twitter</a>.
     </p>
 </section>
 
-<section class="my-16 max-w-lg mx-auto">
-    <header class="relative mb-6 flex items-center">
-        <h2 class="pr-3 text-2xl font-medium text-gray-900">Posts</h2>
-        {# <hr class="w-full bg-gray-300"> #}
+<section class="my-8">
+    <header class="flex items-center">
+        <h2 class="font-bold text-2xl my-4">Posts</h2>
     </header>
 
     {% include "postslist.njk" %}
 </section>
-
-
-
-
-{# {{ content | safe }} #}

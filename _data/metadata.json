@@ -1,6 +1,8 @@
 {
-  "title": "JSTN",
+  "title": "Sharing my experiences",
+  "site_name": "JSTN",
   "url": "https://iamjustin.dev/",
+  "image": "home_image.jpg",
   "language": "en",
   "description": "Passionate about tech and developer experience. I'll frequently share new stuff here, dev.to and twitter.",
   "feed": {
@@ -16,6 +18,10 @@
   "author": {
     "name": "Justin Visserman",
     "email": "noemail@iamjustin.dev",
-    "url": "https://iamjustin.dev/about-me/"
+    "url": "https://iamjustin.dev/about-me/",
+    "twitter": {
+      "username": "j1sc2s",
+      "url": "https://twitter.com/"
+    }
   }
 }
