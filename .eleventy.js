@@ -10,6 +10,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const PostCSSPlugin = require("eleventy-plugin-postcss");
 
+const htmlmin = require("html-minifier");
+
 module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
@@ -39,6 +41,20 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("markdown", (content) => {
     return md.render(content);
+  });
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if( outputPath && outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   // Override Browsersync defaults (used only with --serve)
