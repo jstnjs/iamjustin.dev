@@ -2,7 +2,7 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 
 module.exports = async function() {
 	try {
-    let url = "https://dev.to/api/articles/me/unpublished";
+    let url = "https://dev.to/api/articles/me";
 
 		let posts = await EleventyFetch(url, {
 			duration: "1d",
