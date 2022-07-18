@@ -16,7 +16,6 @@ module.exports = async function() {
 
         return posts;
 	} catch(e) {
-		console.log(e);
         console.log('Failed to fetch articles. Return empty array.');
 
 		return [];
