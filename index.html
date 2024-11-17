@@ -8,13 +8,18 @@
       body {
         margin: 0;
         padding: 0;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: #f0f2f5;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+
+      @media (min-width: 768px) {
+        body {
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       .card {
@@ -23,8 +28,9 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 2rem;
         max-width: 400px;
-        width: 90%;
+        width: calc(100% - 4rem);
         text-align: center;
+        margin: 0 auto;
       }
 
       .profile-image {
@@ -86,9 +92,9 @@
         .card {
           box-shadow: none;
           border-radius: 0;
-          width: 100%;
           max-width: none;
-          padding: 2rem 1rem;
+          padding: 1rem;
+          width: calc(100% - 2rem);
         }
       }
     </style>
@@ -127,18 +133,6 @@
           </svg>
         </a>
         <a
-          href="https://x.com/j1sc2s"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit my X profile"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-            />
-          </svg>
-        </a>
-        <a
           href="https://github.com/jstnjs"
           target="_blank"
           rel="noopener noreferrer"
@@ -153,7 +147,7 @@
           </svg>
         </a>
         <a
-          href="https://bsky.app/profile/justindev.bsky.social"
+          href="https://bsky.app/profile/iamjustin.dev"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit my BlueSky profile"
